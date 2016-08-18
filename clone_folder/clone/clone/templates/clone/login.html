@@ -1,0 +1,35 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="{% static '' %}" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>Twitter Clone</title>
+</head>
+<body>
+<div>
+    <h1>Twitter Clone</h1>
+    
+</div>
+<hr>
+<div>
+        <div>
+        <div>
+            <h1>Log in</h1>
+            <form id='user-login' method="POST" action='/login-submit/'>{% csrf_token %}
+                <div><p>Username:</p><input id="user-user-name" name="user-user-name" required></div>
+                <div><p>Password:</p><input id="user-user-password" name="user-user-password" type="password" required></div>
+                <button type="submit">Submit</button>
+            </form>
+            <p>Not a member yet? <a href="">Register Here</a></p>
+            </div>
+        </div>
+
+</div>
+<div class='foot'>
+        Site by Peter Dziuba. For more info <a href='mailto:peterdziuba@gmail.com'>PeterDziuba@gmail.com</a>
+    </div>
+</body>
+
+    
+</html>
