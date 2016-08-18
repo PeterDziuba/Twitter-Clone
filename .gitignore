@@ -2,4 +2,5 @@ venv/
 *.log
 .DS_Store
 clone_secrets.txt
+db.sqlite3
 
